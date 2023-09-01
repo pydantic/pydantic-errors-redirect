@@ -49,7 +49,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: cloudflare/wrangler-action@2.0.0
+      - uses: cloudflare/wrangler-action@v3.1.1
         with:
           apiToken: ${{ secrets.cloudflare_api_token }}
           command: publish --var GITHUB_SHA:${{ github.sha }}
